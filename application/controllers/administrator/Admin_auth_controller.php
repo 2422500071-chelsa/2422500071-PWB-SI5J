@@ -16,7 +16,7 @@ public function index()
     $data['title'] = 'Blume_brick';
 
     $this->form_validation->set_rules('inputUsername', 'Username', 'required');
-    $this->form_validation->set_rules('inputPassword', 'password', 'required');
+    $this->form_validation->set_rules('inputPassword', 'Password', 'required');
     if ($this->form_validation->run() !== FALSE) {
         $this->__login();
     } else {
@@ -53,5 +53,12 @@ private function __login()
         ');
         redirect('admin/login');
     }
+}
+
+public function logout()
+{
+    $session_data = array('id', 'username', 'full_name', 'admin_login');
+    $this->session->unset_userdata($session_data);
+    redirect('admin/login');
 }
 }
