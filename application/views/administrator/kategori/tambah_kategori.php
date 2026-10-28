@@ -25,33 +25,32 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Tambah kategori</h5>
+                            <h5 class="card-title mb-3">Tambah kategori</h5>
 
-                            <p class="card-text">
+                            <div class="card-text">
                                 <form method="post">
                                     <div class="mb-3">
-                                        <label for="nama_kategori" class="form-label">
-                                            Nama Kategori</label>
-                                            <input type="text" class="form-control" name="nama_kategori" id="nama_kategori" aria-describedby="Nama Kategori">
-                                        </div>
-                                        <label for="deskripsi_kategori" class="form-label">
-                                            Deskripsi</label>
-                                            <input type="text" class="form-control" name="deskripsi_kategori" id="deskripsi_kategori" aria-describedby="Deskripsi ">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Tambah</button>
-                                        <a href="<?= base_url('admin/kategori') ?>" class="btn btn-danger">Kembali</a>
-                                    </form>
-                                </p>
+                                        <label for="nama_kategori" class="form-label">Nama Kategori</label>
+                                        <input type="text" class="form-control" name="nama_kategori" id="nama_kategori" aria-describedby="Nama Kategori">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="deskripsi_kategori" class="form-label">Deskripsi</label>
+                                        <input type="text" class="form-control" name="deskripsi_kategori" id="deskripsi_kategori" aria-describedby="Deskripsi">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Tambah</button>
+                                    <a href="<?= base_url('admin/kategori') ?>" class="btn btn-danger">Kembali</a>
+                                </form>
                             </div>
                         </div>
-                    
                     </div>
-                    <!-- /.col-md-6 -->
-                    
                 </div>
-                <!-- /.row -->
-                </div><!-- /.container-fluid -->
+                <!-- /.col-md-6 -->
             </div>
-            <!-- /.content -->
-            </div>
-            <!-- /.content-wrapper -->             
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

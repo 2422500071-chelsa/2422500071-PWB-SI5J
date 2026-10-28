@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class produk_kategori_model extends CI_Model
+class Produk_kategori_model extends CI_Model
 {
 
 private $_table = "kategori";
@@ -32,10 +32,10 @@ public function hapus($id)
     return ($this->db->affected_rows() !=1) ? false : true;
 }
 
-public function ubah($id)
+public function ubah($id, $data)
 {
     $this->db->where('id_kategori', $id);
     $this->db->update($this->_table, $data);
-    return ($this->db->affected_rows() !=1) ? false : true;
+    return ($this->db->affected_rows() != 1) ? false : true;
 }
 }

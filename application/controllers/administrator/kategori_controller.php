@@ -138,7 +138,8 @@ class Kategori_controller extends CI_Controller
             'deskripsi' => ucfirst($this->input->post('deskripsi_kategori'))
         );
 
-        $ubah = $this->produk_kategori_model->ubah($data, $id);
+        // PERBAIKAN: Ubah urutannya menjadi ($id, $data)
+        $ubah = $this->produk_kategori_model->ubah($id, $data);
 
         if ($ubah) {
             $pesan = 'Berhasil mengubah kategori!!';

@@ -1,4 +1,3 @@
-
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -32,8 +31,8 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Ubah Kategori</h5>
-                        
+                            <!-- DI-WRAPPER DENGAN DIV INI AGAR JUDUL DAN FORM TIDAK SEJAJAR -->
+                            <h5 class="card-title d-block mb-3" style="float: none;">Ubah Kategori</h5>
                             <form method="post">
                                 <div class="mb-3">
                                     <label for="nama_kategori" class="form-label">
@@ -64,9 +63,8 @@
                                 <button type="submit" class="btn btn-primary">
                                     Simpan Perubahan
                                 </button>
-
                                 <a href="<?= base_url('admin/kategori') ?>"
-                                   class="btn btn-danger">
+                                    class="btn btn-danger">
                                     Kembali
                                 </a>
                             </form>
