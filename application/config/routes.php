@@ -74,3 +74,8 @@ $route['admin/ekspedisi2422500071'] = 'administrator/ekspedisi_controller071/ind
 $route['admin/ekspedisi2422500071/tambah'] = 'administrator/ekspedisi_controller071/tambah_ekspedisi';
 $route['admin/ekspedisi2422500071/hapus/(:num)'] = 'administrator/ekspedisi_controller071/hapus_ekspedisi/$1';
 $route['admin/ekspedisi2422500071/ubah/(:num)'] = 'administrator/ekspedisi_controller071/ubah_ekspedisi/$1';
+
+#pelanggan
+$route['login'] = 'pelanggan_controller/login';
+$route['register'] = 'pelanggan_controller/register';
+$route['logout'] = 'pelanggan_controller/logout';
