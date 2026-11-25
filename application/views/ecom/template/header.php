@@ -19,7 +19,7 @@
 
 <body class="sb-nav-fixed">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2" aria-label="Eighth navbar example">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 mb-2" aria-label="Eighth navbar example">
         <div class="container">
             <a class="navbar-brand" href="#">Title</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,21 +41,22 @@
                     </li>
                 </ul>
                 <form role="search" class="me-3">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
                 </form>
 
-                <?php if ($this->session->has_userdata('pelanggan_login')) : ?>
+                <?php if ($this->session->has_userdata('pelanggan_login')): ?>
                     <div class="text-end">
-                        <a href="<?= base_url('keranjang') ?>" class="btn btn-outline-light me-2">Keranjang</a>
-                        <a href="<?= base_url('logout') ?>" class="btn btn-danger">Logout</a>
+                        <a href="<?= base_url('profil') ?>" class="btn btn-outline-light btn-sm me-2">Profil</a>
+                        <a href="<?= base_url('keranjang') ?>" class="btn btn-outline-light btn-sm me-2">Keranjang</a>
+                        <a href="<?= base_url('logout') ?>" class="btn btn-danger btn-sm">Logout</a>
                     </div>
-                    <?php else : ?>
+                <?php else: ?>
                     <div class="text-end">
-                        <a href="" class="btn btn-outline-light me-2 ">Login</a>
-                        <a href="" class="btn btn-warning">Register</a>
+                        <a href="<?= base_url('login') ?>" class="btn btn-outline-light btn-sm me-2">Login</a>
+                        <a href="<?= base_url('register') ?>" class="btn btn-warning btn-sm">Register</a>
                     </div>
                 <?php endif ?>
-                
+
             </div>
         </div>
     </nav>
